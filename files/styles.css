@@ -8,6 +8,7 @@ header {
     
 }
 body {
+    width: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -43,15 +44,14 @@ a {
     text-decoration: none;
 }
 
-
-.container { 
-    width: 100%;
-    display: flex;
-    
-    
+a:hover {
+    opacity: .75;
 }
 
-.hero {
+
+
+
+.hero, .footer {
     background-color: #1f2937 ;
 }
 
@@ -60,13 +60,81 @@ a {
     font-size: 1.325rem;
 }
 
-.content {
+.container {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    
+}
+
+.content {
+    padding: 5rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%
     
 }
 .content h1 {
     color: #f9faf8;
     font-weight: 900;
     font-size: 3rem;
+    width: 100%;
+}
+
+.btn {
+    align-self: flex-start;
+    background-color: #3882f6;
+    padding: .75rem 2rem;
+    border-radius: 100px;
+    margin-bottom: 50px;
+}
+
+.btn:hover {
+    opacity: .75;
+}
+
+img {
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px 4px;
+    
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    
+}
+
+.quote {
+    background-color: #e5e7eb;
+    display: flex;
+    margin-top: auto;
+}
+
+
+.info {
+    padding: 3rem 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:50px;
+    
+    
+}
+
+.pictures {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+h2 {
+    
 }
