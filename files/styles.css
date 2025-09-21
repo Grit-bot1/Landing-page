@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
 }
+
+
 header {
     display: flex;
     width: 100%;
@@ -13,6 +15,8 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'roboto', serif;
+    min-height: 100vh;
+    
 }
 
 ul {
@@ -64,7 +68,8 @@ a:hover {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 5em;
+    padding: 3em 2em;
+    
     
     
 }
@@ -75,7 +80,8 @@ a:hover {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 100%
+    width: 100%;
+
     
 }
 .content h1 {
@@ -116,14 +122,15 @@ img {
 .footer {
     display: flex;
     justify-content: center;
-    margin-top: auto;
+   
+    
     
 }
 
 .quote {
     background-color: #e5e7eb;
     display: flex;
-    margin-top: auto;
+    
 }
 
 
@@ -135,7 +142,18 @@ img {
     justify-content: center;
  
 }
-
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
+    
+    
+}
+.box {
+    text-align: center;
+}
 .pictext {
     font-size: 1.4rem;
 }
@@ -155,7 +173,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 20vh;
+    
     
 }
 
@@ -164,10 +182,11 @@ h2 {
 .quotetext {
     display: flex;
     flex-direction: column;
-    padding: 5em;
+    padding: 2em;
     font-size: 2rem;
     font-weight: 300;
-    max-width: 60%;
+    max-width: 70%;
+    
 
 }
 
@@ -180,30 +199,47 @@ h2 {
     
 }
 
+.cta {
+    
+    background-color: #3882f6;
+    border-radius: 5px;
+    width: 50%;
+    padding: 2em;
+    font-size: 1.325rem;
+    margin: 20px auto; 
+    align-items: center;
+    color: white;
+}
+.bold {
+    font-weight: 900;
+    display: block;
+}
 
-.info {
+.ctatext {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
+
+.push {
+    justify-content: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 70px;
+    flex-grow: 1;
     
-
-}
-
-.cta {
-    background-color: #3882f6;
-    width: 70%;
-    border-radius: 5px;
-    padding: 3em;
-    font-size: 1.325rem;
     
 }
 
+
+.subtext {
+    flex: 1;
+}
 .btn--white {
     color: white;
-    padding: .75rem 2rem;
-    border-radius: 100px;
+    padding: .75rem 3rem;
+    border-radius: 10px;
     border: 3px solid white;
-    margin-bottom: 50px;
+    margin: 0 auto;
+    
 }
